@@ -1,0 +1,110 @@
+.title{
+   text-align: center;
+   color: orange;
+}
+.headings{
+  border: 5px solid red;
+  color:blue;
+  font-style: italic;
+  padding-left: 15px;
+  font-size: 10px
+}
+.container{
+  margin-top: -15px;
+  border: 10px solid orange;
+  color:green;
+  font-size: 20px;
+  width: 300px;
+  height: 150px;
+}
+.container1{
+  border: 5px solid black;
+  width: 90px;
+  height: 120px;
+  margin-left:20px;
+  margin-top: 10px;
+}
+.container2{
+  border: 5px solid black;
+  width: 90px;
+  height: 120px;
+  margin-left: 180px;
+  margin-top: -130px;
+
+}
+.ul{
+  border: 2px dotted green;
+  margin-top: 40px;
+  width: 800px;
+  height: 180px;
+  list-style: none;
+//  display: flex;
+  align-items: center;
+  //flex-direction: row;
+  //flex-direction: row-reverse;
+  //flex-direction: column;
+  //flex-direction: column-reverse;
+  justify-content: center;
+  justify-content: space-around;
+  //justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.one-container{
+  order:2;
+  background-color: blueviolet;
+}
+.two-container{
+  flex-basis: 20%;
+  background-color: red;
+}
+.three-container{
+  flex-basis: 15%;
+  background-color: silver;
+}
+.four-container{
+  background-color: yellow;
+}
+.five-container{
+  flex-basis: 15%;
+  order:2;
+  background-color: orange;
+}
+.six-container{
+  flex-basis: 15%;
+  order:2;
+  background-color: blue;
+}
+// @media (max-width:600px) {
+// p {
+//   background-color: darkorange;
+//   }
+// }
+@media (orientation:landscape)  and (max-width:600px){
+  p{
+    background-color: green;
+  }
+}
+#username{
+  font-family: sans-serif;
+  font-size:15px
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.images{
+  margin-top: 10px;
+  border: 10px solid yellow;
+  color:green;
+  font-size: 20px;
+  width: 300px;
+  height: 150px;
+  margin-left:400px;
+  margin-top: -150px;
+}
