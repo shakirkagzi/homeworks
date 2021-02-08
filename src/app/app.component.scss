@@ -25,6 +25,7 @@
   margin-top: 10px;
 }
 .container2{
+  list-style: square;
   border: 5px solid black;
   width: 90px;
   height: 120px;
@@ -32,18 +33,18 @@
   margin-top: -130px;
 
 }
-.ul{
+.ul-container{
   border: 2px dotted green;
   margin-top: 40px;
   width: 800px;
   height: 180px;
-  list-style: none;
-//  display: flex;
+  //list-style: none;
+  display: flex;
   align-items: center;
   //flex-direction: row;
   //flex-direction: row-reverse;
   //flex-direction: column;
-  //flex-direction: column-reverse;
+  flex-direction: column-reverse;
   justify-content: center;
   justify-content: space-around;
   //justify-content: space-between;
@@ -51,7 +52,7 @@
 
 }
 .one-container{
-  order:2;
+
   background-color: blueviolet;
 }
 .two-container{
@@ -67,12 +68,12 @@
 }
 .five-container{
   flex-basis: 15%;
-  order:2;
+
   background-color: orange;
 }
 .six-container{
   flex-basis: 15%;
-  order:2;
+
   background-color: blue;
 }
 // @media (max-width:600px) {
