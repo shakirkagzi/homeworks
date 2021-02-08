@@ -1,1 +1,47 @@
-<p>dashboard works!</p>
+<p>Dashboard Container</p>
+
+<div class ="dashboard-container">
+  <h1>Welcome : {{name}}</h1>
+  <h2> Name width = {{name.length}}</h2>
+  <h3> Math Calculation 5+6 : {{5+6}}</h3>
+  <h3> Title : {{title}} </h3>
+  <span> {{duration}} {{ duration > 1 ? 'seconds' : 'second' }}</span>
+  <h4>String Interpolation:<br>
+    {{"I am from HTML class: " + text}}
+  </h4>
+</div>
+
+<aside class="aside">
+<img [src]="imageUrl" />
+</aside>
+
+<input [disabled]="isActive" />
+<button [attr.aria-label]="actionName">{{actionName}} with Aria</button>
+<a [href]="destinationUrl" [attr.search-destionation]="alternativeUrl"> Search with Google</a>
+<div>
+  <br>
+  <table>
+    <tr>Enter User ID  : <input [placeholder]="userid"> </tr>
+    <tr>Enter Password: <input [placeholder]="password" /></tr>
+    <tr>Email : <input [placeholder]="email" /></tr>
+  </table>
+  <br><br>
+  <button [disabled]="!isAuthenticate">Login</button>
+</div>
+
+<h3>Hi there, Welcome {{username}}<br>
+<input [(ngModel)]="username" placeholder="type your name">
+</h3>
+
+<button (click)="onClick()">Click here!</button>
+<div class="user-container" (click)="toggleColor()">
+<h3> You have clicked {{clickCounter}} times</h3>
+</div>
+
+<textarea (keydown)="onKeyPressed($event)"></textarea>
+
+<div>
+<h4 [class.special]="isSpecial">Example of Class binding</h4>
+<h4 [ngClass]="isSpecial ? 'special' : 'regular-user'">Multiple Class Binding</h4>
+<h4 class="another-class" [class.special]="isSpecial">Example of Class binding (another)</h4>
+</div>

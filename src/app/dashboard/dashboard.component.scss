@@ -1,0 +1,30 @@
+.dashboard-container{
+  background-color: darkcyan;
+  width:700px;
+  height:500px;
+}
+.aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  margin-top: -500px;
+  display: block;
+}
+.user-container{
+  width:200px;
+  height: 150px;
+  background: gray;
+}
+.special {
+  background: aquamarine;
+}
+.regular-user {
+  background: khaki;
+}
+
+.another-class{
+  font-size: 8px;
+}
