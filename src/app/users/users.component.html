@@ -1,0 +1,26 @@
+<p>users works!</p>
+<div class="users-container">Users Information</div>
+<button mat-raised-button color="primary" (click)="navigateToDashboard()">Go To Dashboard</button>
+
+<div class="users-list__container">
+  <div class="card" *ngFor="let user of userList">
+    <a [routerLink]="['/users', user.id]">
+<!--     <img src="{{user.image}}" alt="Avatar" class='image'>-->
+      <div class="container">
+        <p>ID:{{user.id}}</p>
+        <p>Address:</p>
+        <p>Geo-Location.: [{{user.address.geolocation.lat}},{{user.address.geolocation.long}}]</p>
+        <p>House No.: {{user.address.number}}</p>
+        <p>Street: {{user.address.street}}</p>
+        <p>City: {{user.address.city}}</p>
+        <p>Zipcode: {{user.address.zipcode}}</p>
+        <p>Name: {{user.name.firstname}} {{user.name.lastname}}</p>
+        <p>First Name: {{user.name.firstname}}</p>
+        <p>Last Name: {{user.name.lastname}}</p>
+        <p>Email : {{user.email}}</p>
+        <p>Username: "{{user.password}}"</p>
+        <p>Phone: {{user.phone}}</p>
+      </div>
+    </a>
+  </div>
+</div>
